@@ -8,7 +8,7 @@ import hex.genmodel.MojoModel;
 public class Server {
 
   public static void main(String[] args) throws Exception {
-    String mojoModelPath = "./prostate_mojo_model/GBM_model_python_1546399195653_1.zip";
+    String mojoModelPath = "./model/GBM_model_python_1546412047521_1.zip";
 
     EasyPredictModelWrapper model = new EasyPredictModelWrapper(MojoModel.load(mojoModelPath));
 

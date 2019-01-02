@@ -5,6 +5,8 @@
 Run the script to export the model.
 
 ```
+mkdir ./model/
+
 ./export_mojo_example.py
 ```
 
@@ -13,7 +15,7 @@ Run the script to export the model.
 Edit and compile the Java file with the H2O model.
 
 ```
-javac -cp ./prostate_mojo_model/h2o-genmodel.jar -J-Xms2g -J-XX:MaxPermSize=128m ./Server.java
+javac -cp ./model/h2o-genmodel.jar -J-Xms2g -J-XX:MaxPermSize=128m ./Server.java
 
-java -cp .:./prostate_mojo_model/h2o-genmodel.jar Server
+java -cp .:./model/h2o-genmodel.jar Server
 ```
